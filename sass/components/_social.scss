@@ -1,0 +1,42 @@
+/*social*/
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+&__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: rgba(255, 255, 255, 0.1);
+}
+
+&__link,
+&__link svg {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:hover svg,
+&__link:focus,
+&__link:focus svg {
+    background-color: #2196F3;
+    fill: #ffffff;
+}
+
+&__icon {
+    fill: #AFB1B8;
+
+&--footer {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+}
+}

@@ -1,0 +1,43 @@
+/*LOGO*/
+
+.logo {
+    text-decoration: none;
+}
+
+.web {
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+&--header {
+    color: #2196f3;
+}
+
+&--footer {
+    color: #2196f3;
+}
+}
+
+.studio {
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+&--header {
+    color: #212121;
+    padding-right: 93px;
+}
+
+&--footer {
+    color: #ffffff;
+}
+}
+
+
+

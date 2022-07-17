@@ -1,0 +1,28 @@
+/* THEME SECTION */
+
+.theme {
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)),
+        url('../images/Img.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+&__headline {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+&__button {
+    margin-top: 30px;
+    animation: data-modal-open;
+}
+}

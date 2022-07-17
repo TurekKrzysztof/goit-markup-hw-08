@@ -1,0 +1,55 @@
+/* CUSTOMERS SECTION */
+
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&__headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+&--top {
+    padding-bottom: 50px;
+    margin: 0;
+}
+}
+
+&__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+&__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #AFB1B8;
+    border-style: solid;
+
+&,
+& svg {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&:hover,
+&:hover svg,
+&:focus,
+&:focus svg {
+    border-color: var(--customers-hover);
+    fill: var(--customers-hover);
+}
+}
+
+&__icon {
+    fill: #AFB1B8;
+}
+}

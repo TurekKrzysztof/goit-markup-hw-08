@@ -1,0 +1,42 @@
+/*contact*/
+
+.contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+
+    &--header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+        margin-right: 0;
+    }
+
+    &,
+    &__icon {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+        fill: #757575;
+    }
+
+    &__icon--position {
+        margin-right: 10px;
+    }
+
+    &:hover,
+    &:hover &__icon,
+    &:focus,
+    &:focus &__icon {
+        color: var(--link-hover);
+        fill: var(--link-hover);
+    }
+}
