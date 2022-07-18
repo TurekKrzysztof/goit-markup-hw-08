@@ -128,7 +128,14 @@
             <ul class="team__list">
                 <li class="team__item">
                     <figure class="team__figure">    
-                        <img src="images/img(3).jpg" alt="img(3)" width="270" height="260"/>
+                        <img class="team_img" alt="img(3)"
+                        src="images/img(3).jpg"  width="270" height="260"
+                        src="./images/productdesigner.jpg" srcset="
+                  ./images/productdesigner.jpg 270w,
+                  ./images/productdesigner@2x.jpg 354w,
+                  ./images/productdesigner@3x.jpg 450w" sizes="(min-width: 1200px) 270px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) 100%">/>
                         <figcaption class="team__figcaption">
                             <h4 class="team__name team__name--figcaption">John Doe</h4>
                             <p class="team__job">Product Designer</p>
