@@ -5,14 +5,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-&__container {
-    display: flex;
-    flex-direction: row;
-}
-
 &__join-us {
-    padding-top: 12px;
-    padding-left: 70px;
+    margin-top: 60px;
 }
 }
 
@@ -27,9 +21,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-align: center;
 }
 
 &__social {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -39,13 +38,15 @@
 }
 
 .us {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    text-align: center;
+   
 
 &__logo {
     padding-bottom: 20px;
+}
+
+&__location {
+    margin-top: 20px;
 }
 
 &__location,
@@ -59,10 +60,95 @@
 
 &__data {
     color: rgba(255, 255, 255, 0.6);
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 &__contact {
     padding-left: 0px;
     padding-top: 9px;
 }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .newsletter__input--footer {
+        max-width: 480px;
+    }
+
+    .footer__join-us {
+        margin-top: 0px;
+    }
+
+    .newsletter--footer {
+        text-align: center;
+    }
+
+    .newsletter__submit {
+        margin-left: 269px;
+        margin-right: 269px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__div {
+        display: flex;
+        gap: 30px;
+    }
+
+    .us {
+        margin-right: 64px;
+
+        &__location {
+            font-size: 14px;
+            line-height: 1.7142857143;
+            letter-spacing: 0.03em;
+        }
+
+        &__data {
+            display: block;
+        }
+    }
+
+    .join-us {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        margin-top: 12px;
+
+    &__headline {
+        text-align: left;
+    }
+    }
+
+    .newsletter {
+        padding-top: 12px;
+        padding-left: 78px;
+
+    &__headline {
+        text-align: left;
+    }
+
+    &__submit {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 0px;
+    }
+        &__label {
+            margin-right: 12px;
+        }
+
+        &__input {
+            width: 358px;
+            margin-top: 20px;
+        }
+    }
 }

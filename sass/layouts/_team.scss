@@ -1,8 +1,8 @@
 /* OUR TEAM SECTION */
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: #f5f4fa;
 
 &__headline {
@@ -12,8 +12,9 @@
     text-align: center;
     letter-spacing: 0.03em;
 
+
 &--top {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     margin: 0;
 }
 
@@ -23,17 +24,26 @@
 }
 
 &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    justify-content: space-between;
 }
 
 &__figure {
-    width: 270px;
-    height: 428px;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 &__figcaption {
@@ -41,7 +51,9 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 &__name {
@@ -64,5 +76,52 @@
 
 &__social {
     padding-top: 16px;
+    padding-left: 122px;
+    padding-right: 122px;
+}
+
+&__img {
+    width: 100%;
 }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team {   
+        &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
+        }
+
+        &__figure {
+            width: calc(50vw - 30px);
+        }
+
+        &__social {
+        padding-left: 74px;
+        padding-right: 74px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        &__list {
+        display: flex;
+        flex-direction: row;
+        }
+
+        &__figure {
+            width: 270px;
+        }
+
+         &__social {
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+    }
+}
+

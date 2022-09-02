@@ -11,11 +11,7 @@
     text-decoration: none;
 
     &--header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 30px;
-        margin-right: 0;
+        display: none;
     }
 
     &,
@@ -28,15 +24,29 @@
         fill: #757575;
     }
 
-    &__icon--position {
-        margin-right: 10px;
-    }
-
     &:hover,
     &:hover &__icon,
     &:focus,
     &:focus &__icon {
         color: var(--link-hover);
         fill: var(--link-hover);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact {
+
+        &--header {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0; 
+            padding-top: 5px;
+            padding-bottom: 5px;
+            }
+
+        &__icon--position {
+            margin-right: 10px;
+        }
     }
 }

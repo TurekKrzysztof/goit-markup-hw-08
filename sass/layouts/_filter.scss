@@ -2,8 +2,8 @@
 .filter {
 
 &--portfolio {
-    padding-top: 94px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 0px;
 }
 
 &__button {
@@ -36,11 +36,38 @@
 
 &__list {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
-&__item--portfolio {
-    padding-right: 8px;
+&__item {
+    margin-bottom: 15px;
 }
+
+&__item:not(:last-child) {
+      margin-right: 8px;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .filter__list {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .filter__item {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .filter {
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
 }

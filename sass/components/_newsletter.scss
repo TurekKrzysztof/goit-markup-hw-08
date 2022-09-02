@@ -2,8 +2,7 @@
 .newsletter {
 
 &--footer {
-    padding-top: 12px;
-    padding-left: 78px;
+    padding-top: 60px;
 }
 
 &__headline {
@@ -15,13 +14,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-align: center;
 }
 
 &__form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
 &__form--footer {
@@ -29,7 +26,7 @@
 }
 
 &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -52,7 +49,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 20px;
 }
 
 &__signup {
@@ -67,3 +66,4 @@
     padding-right: 24px;
 }
 }
+

@@ -1,8 +1,8 @@
 /* CUSTOMERS SECTION */
 
 .customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 
 &__headline {
     font-weight: 700;
@@ -12,22 +12,33 @@
     letter-spacing: 0.03em;
 
 &--top {
-    padding-bottom: 50px;
     margin: 0;
 }
 }
 
 &__list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+&__item {
+    width: calc((100% - 30px) / 2);
+    margin-top: 30px;
+}
+
+&__icon {
+    width: 100%;
 }
 
 &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 92px;
     border-width: 1px;
     border-radius: 4px;
@@ -52,4 +63,27 @@
 &__icon {
     fill: #AFB1B8;
 }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .customers {
+        &__list {
+        flex-basis: calc((100% - 60px) / 3);
+        }
+        &__item {
+            width: calc((100% - 60px) / 3);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .customers__list {
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
 }

@@ -2,18 +2,19 @@
 
 .lorem {
     letter-spacing: 0.03em;
-    padding-top: 94px;
+    padding-bottom: 30px;
+    padding-top: 60px;
 
 &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 &__link {
     display: flex;
-    width: 270px;
     height: 120px;
     align-items: center;
     justify-content: center;
@@ -28,14 +29,16 @@
 }
 
 &__headline {
-    font-size: 14px;
-    font-weight: 700;
     line-height: 1.14;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
 &--start {
     padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 }
 
@@ -43,9 +46,49 @@
     font-size: 14px;
     line-height: 1.71;
     color: #757575;
+    padding-bottom: 30px;
 
 &::first-letter {
     text-transform: uppercase;
 }
 }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .lorem {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        &__item {
+            width: calc(50% - 15px);
+        }
+
+        &__headline {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .lorem {
+        padding-bottom: 64px;
+        padding-top: 94px;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item:not(:first-child) {
+            margin-left: 30px;
+        }
+
+        &__headline {
+            text-align: left;
+        }
+    }
 }

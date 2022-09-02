@@ -31,7 +31,7 @@
 
 &--header {
     color: #212121;
-    padding-right: 93px;
+    padding-right: 83px;
 }
 
 &--footer {
@@ -39,5 +39,9 @@
 }
 }
 
+@media screen and (min-width: 1200px) {
 
-
+    .studio--header {
+    padding-right: 93px;
+    }
+}
