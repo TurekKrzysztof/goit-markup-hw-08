@@ -166,6 +166,11 @@
 &__label:focus-within &__svg {
     fill: #2196F3;
 }
+
+&__button {
+    display: flex;
+    justify-content: center;
+}
 }
 
 .modal-policy {
@@ -210,7 +215,6 @@
 
     &__button {
         margin-top: 30px;
-        margin-left: 80px;
     }
 }
 
@@ -263,9 +267,5 @@
         font-size: 14px;
         line-height: 24px;
       }
-
-    &__button {
-        margin-left: 105px;
-    }
   }
 }

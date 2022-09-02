@@ -244,8 +244,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 125px;
-  margin-right: 125px;
   margin-top: 20px;
 }
 .newsletter__signup {
@@ -257,6 +255,10 @@ body {
 }
 .newsletter__signup--footer {
   padding-right: 24px;
+}
+.newsletter__button {
+  display: flex;
+  justify-content: center;
 }
 
 /* MODAL SECTION */
@@ -399,6 +401,10 @@ body {
 .modal__label:focus-within .modal__svg {
   fill: #2196F3;
 }
+.modal__button {
+  display: flex;
+  justify-content: center;
+}
 
 .modal-policy {
   display: flex;
@@ -437,7 +443,6 @@ body {
 }
 .modal-policy__button {
   margin-top: 30px;
-  margin-left: 80px;
 }
 
 .button__send {
@@ -480,9 +485,6 @@ body {
   .modal-policy__text {
     font-size: 14px;
     line-height: 24px;
-  }
-  .modal-policy__button {
-    margin-left: 105px;
   }
 }
 /* HEADER SECTION */
@@ -1403,10 +1405,6 @@ body {
   .newsletter--footer {
     text-align: center;
   }
-  .newsletter__submit {
-    margin-left: 269px;
-    margin-right: 269px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__div {
@@ -1439,10 +1437,6 @@ body {
   }
   .newsletter__headline {
     text-align: left;
-  }
-  .newsletter__submit {
-    margin-left: 0px;
-    margin-right: 0px;
   }
   .newsletter__form {
     display: flex;
